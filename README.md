@@ -31,10 +31,10 @@ Based on the ranges, the output is obtained. </br>
 
 ### classify_string_column_three: </br>
 This function performs regex based classification. The regex patterns for different entities like email, phone number, pincode, and url is defined. 
-</br>email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'</br>
-</br>phone_pattern = r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'</br>
-</br>pincode_pattern = r'\b\d{6}\b'</br>
-</br>url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'</br>
+- <email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+- phone_pattern = r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'
+- pincode_pattern = r'\b\d{6}\b'
+- url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
 The pattern searching is performed and the semantic type is determined.</br>
 
 
