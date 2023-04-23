@@ -20,7 +20,7 @@ This function takes in four parameters: the column number, a key, a type map, an
 First, the function retrieves the name of the column for the given column number and gets the embeddings for the column name and the key using spaCy's pre-trained language model. It then computes the cosine similarity between the two embeddings to determine their similarity.Next, it retrieves the values from the type map for the given key and finds the most similar value to the key based on cosine similarity. This most similar value is used as a reference point for determining which other values in the key's value list closely match the column name.Finally, the function creates a list of values that have a similarity score above the reference point's similarity score and returns this list as the predicted matching values.</br>
 
 ### detect1_semantic_type: </br>
-This function detects the semantic type of a list of numeric values. 
+This function detects the semantic type of a list of numeric values and performs a range based classification. 
 The parameters chosen are latitude, longitude, temperature, humidity, measurement, and salary. The range as well as the differences in the consequent values is calculated.
 Latitude and longitude, all the values of the column are -90<=latitude<=90, and -180<=longitude<=180. 
 Temperature, all values are in the range (-10, 50), all absolute difference should be less than 10
@@ -28,6 +28,14 @@ Humidity, all values are in the range(0, 100),
 Altitude, all values are in the range(-413.6, 8848) 
 Salary and cost, all values are greater than 0
 Based on the ranges, the output is obtained. </br>
+
+### classify_string_column_three: </br>
+This function performs regex based classification. The regex patterns for different entities like email, phone number, pincode, and url is defined. 
+</br>email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'</br>
+</br>phone_pattern = r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'</br>
+</br>pincode_pattern = r'\b\d{6}\b'</br>
+</br>url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'</br>
+The pattern searching is performed and the semantic type is determined.</br>
 
 
 
