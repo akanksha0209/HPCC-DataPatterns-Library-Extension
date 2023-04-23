@@ -35,7 +35,8 @@ This function performs regex based classification. The regex patterns for differ
 - phone_pattern = r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'
 - pincode_pattern = r'\b\d{6}\b'
 - url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-The pattern searching is performed and the semantic type is determined.</br>
+
+The pattern searching is performed and the semantic type is returned</br>
 
 
 
