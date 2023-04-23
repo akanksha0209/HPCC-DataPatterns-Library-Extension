@@ -22,16 +22,16 @@ First, the function retrieves the name of the column for the given column number
 ### detect1_semantic_type: </br>
 This function detects the semantic type of a list of numeric values and performs a range based classification. 
 The parameters chosen are latitude, longitude, temperature, humidity, measurement, and salary. The range as well as the differences in the consequent values is calculated.
-Latitude and longitude, all the values of the column are -90<=latitude<=90, and -180<=longitude<=180. 
-Temperature, all values are in the range (-10, 50), all absolute difference should be less than 10
-Humidity, all values are in the range(0, 100), 
-Altitude, all values are in the range(-413.6, 8848) 
-Salary and cost, all values are greater than 0
+- Latitude and longitude, all the values of the column are -90<=latitude<=90, and -180<=longitude<=180. 
+- Temperature, all values are in the range (-10, 50), all absolute difference should be less than 10
+- Humidity, all values are in the range(0, 100), 
+- Altitude, all values are in the range(-413.6, 8848) 
+- Salary and cost, all values are greater than 0
 Based on the ranges, the output is obtained. </br>
 
 ### classify_string_column_three: </br>
 This function performs regex based classification. The regex patterns for different entities like email, phone number, pincode, and url is defined. 
-- <email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+- email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 - phone_pattern = r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'
 - pincode_pattern = r'\b\d{6}\b'
 - url_pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
