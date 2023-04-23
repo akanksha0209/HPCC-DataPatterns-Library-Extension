@@ -19,7 +19,7 @@ This is a function that takes a pandas dataframe as input and iterates through e
 This function takes in four parameters: the column number, a key, a type map, and a list of column names. The purpose of the function is to predict matching values for a given key in a type map based on the similarity between the column name and the key.
 First, the function retrieves the name of the column for the given column number and gets the embeddings for the column name and the key using spaCy's pre-trained language model. It then computes the cosine similarity between the two embeddings to determine their similarity.Next, it retrieves the values from the type map for the given key and finds the most similar value to the key based on cosine similarity. This most similar value is used as a reference point for determining which other values in the key's value list closely match the column name.Finally, the function creates a list of values that have a similarity score above the reference point's similarity score and returns this list as the predicted matching values.</br>
 
-### detect1_semantic_type: </br>
+#### detect1_semantic_type: </br>
 This function detects the semantic type of a list of numeric values and performs a range based classification. 
 The parameters chosen are latitude, longitude, temperature, humidity, measurement, and salary. The range as well as the differences in the consequent values is calculated.
 - Latitude and longitude, all the values of the column are -90<=latitude<=90, and -180<=longitude<=180. 
@@ -29,7 +29,7 @@ The parameters chosen are latitude, longitude, temperature, humidity, measuremen
 - Salary and cost, all values are greater than 0
 Based on the ranges, the output is obtained. </br>
 
-### classify_string_column_three: </br>
+#### classify_string_column_three: </br>
 This function performs regex based classification. The regex patterns for different entities like email, phone number, pincode, and url is defined. 
 - email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 - phone_pattern = r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'
