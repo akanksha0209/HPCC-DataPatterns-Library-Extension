@@ -8,5 +8,5 @@ Examples</br>
 
 ### Installation
 Download the zip file for this Github Repository or clone it using </br>
-git clone [https://github.com/akanksha0209/HPCC-DataPatterns-Library-Extension.git](https://github.com/akanksha0209/HPCC-DataPatterns-Library-Extension.git) </br>
+'git clone [https://github.com/akanksha0209/HPCC-DataPatterns-Library-Extension.git](https://github.com/akanksha0209/HPCC-DataPatterns-Library-Extension.git)' </br>
 After cloning it make sure all dependencies are installed.
