@@ -5,6 +5,7 @@ Semantic type detection is critical for analyzing large textual datasets. NLP te
 Installation</br>
 Basic Methodology</br>
 Examples</br>
+Links for some datasets</br>
 
 ### Installation
 Download the zip file for this Github Repository or clone it using </br>
@@ -61,5 +62,7 @@ Classifies columns in a CSV dataset using NER and regex-based entity classificat
 - If no semantic type is found, the column range is calculated and categorization is done as constant, binary, ordinal, interval, and ratio
 A Pandas DataFrame with column names and their predicted entity types is returned. </br>
 
+### Links for Some Datasets
 
+1) [https://drive.google.com/file/d/1RHoS14zMEKozfDhV6Brtmhiec-qepSWK/view?usp=share_link](https://drive.google.com/file/d/1RHoS14zMEKozfDhV6Brtmhiec-qepSWK/view?usp=share_link) </br>
 
