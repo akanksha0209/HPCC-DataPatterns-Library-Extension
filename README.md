@@ -62,6 +62,19 @@ Classifies columns in a CSV dataset using NER and regex-based entity classificat
 - If no semantic type is found, the column range is calculated and categorization is done as constant, binary, ordinal, interval, and ratio
 A Pandas DataFrame with column names and their predicted entity types is returned. </br>
 
+
+### Example 
+The dataset used here is books.csv </br>
+The dataset is loaded and once the datatypes are detected, we get the following as the ouput.
+![image](https://user-images.githubusercontent.com/97330850/234066399-8242605a-25d2-4190-b32a-a6875a23a886.png)
+</br>
+The ner_classification function returns the dataset in the following manner. </br>
+![image](https://user-images.githubusercontent.com/97330850/234066796-f3dfe388-8379-437a-9f45-1d870e21e18b.png)
+</br>
+The final output after applying all the classification functions and regex is as follows: </br>
+![image](https://user-images.githubusercontent.com/97330850/234067046-fc25c727-a48f-4822-9e3d-a8390861275f.png)
+
+
 ### Links for Some Datasets
 
 1) [https://drive.google.com/file/d/1RHoS14zMEKozfDhV6Brtmhiec-qepSWK/view?usp=share_link](https://drive.google.com/file/d/1RHoS14zMEKozfDhV6Brtmhiec-qepSWK/view?usp=share_link) </br>
