@@ -46,6 +46,13 @@ The whole dataframe is broken into chunks of size 25. This function assigns name
 
 #### major_col_pred_array: </br>
 
+#### match_column_type: </br>
+This function takes a dataset and a column name as input parameters and returns the best matching column type based on the similarity of the values in the column with predefined type maps. Here are the main steps of the function:
+- It creates a TfidfVectorizer object to transform the text data into vectors and fit it on the column data.
+- It iterates over the predefined type maps and transforms the values into vectors to compute the cosine similarity between the values vector and the text vectors of the column data.
+- It computes the average similarity score for each type map and stores it in a dictionary.
+- It returns the type map with the highest average similarity score as the best matching column type. </br>
+
 
 
 
