@@ -66,13 +66,21 @@ A Pandas DataFrame with column names and their predicted entity types is returne
 ### Example 
 The dataset used here is books.csv </br>
 The dataset is loaded and once the datatypes are detected, we get the following as the ouput.
+</br>
+</br>
 ![image](https://user-images.githubusercontent.com/97330850/234066399-8242605a-25d2-4190-b32a-a6875a23a886.png)
 </br>
-The ner_classification function returns the dataset in the following manner. </br>
+</br>
+The ner_classification function returns the dataset in the following manner. </br> 
+</br>
 ![image](https://user-images.githubusercontent.com/97330850/234066796-f3dfe388-8379-437a-9f45-1d870e21e18b.png)
 </br>
+</br>
 The final output after applying all the classification functions and regex is as follows: </br>
+</br>
 ![image](https://user-images.githubusercontent.com/97330850/234067046-fc25c727-a48f-4822-9e3d-a8390861275f.png)
+</br>
+</br>
 
 
 ### Links for Some Datasets
