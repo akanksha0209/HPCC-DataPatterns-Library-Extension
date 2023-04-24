@@ -38,5 +38,14 @@ This function performs regex based classification. The regex patterns for differ
 
 The pattern searching is performed and the semantic type is returned</br>
 
+#### get_entities: </br>
+This function assigns named entity recognition value to an input </br>
+
+#### assign_column_ner_classification: </br>
+The whole dataframe is broken into chunks of size 25. This function assigns named entity recognition value to new copy of dataframe and returns the new dataframe. It extracts majority of each column and stores it in an array </br>
+
+#### major_col_pred_array: </br>
+
+
 
 
