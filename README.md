@@ -53,6 +53,13 @@ This function takes a dataset and a column name as input parameters and returns 
 - It computes the average similarity score for each type map and stores it in a dictionary.
 - It returns the type map with the highest average similarity score as the best matching column type. </br>
 
+#### classify_columms: </br>
+Classifies columns in a CSV dataset using NER and regex-based entity classification.
+- Classify object type columns using NLP and regex
+- If no named entity is found, regex is used to classify the column
+- Classify numerical columns using range-based hierarchical classification
+- If no semantic type is found, the column range is calculated and categorization is done as constant, binary, ordinal, interval, and ratio
+A Pandas DataFrame with column names and their predicted entity types is returned. </br>
 
 
 
