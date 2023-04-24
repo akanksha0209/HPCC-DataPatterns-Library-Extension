@@ -46,6 +46,7 @@ This function assigns named entity recognition value to an input </br>
 The whole dataframe is broken into chunks of size 25. This function assigns named entity recognition value to new copy of dataframe and returns the new dataframe. It extracts majority of each column and stores it in an array </br>
 
 #### major_col_pred_array: </br>
+The function 'major_col_pred_array' takes a dataframe as input and predicts the major column type using NER classification. It assigns a classification to a subset of the data (num_samples) using another function called 'assign_column_ner_classification'. It then calculates the most common classification for each column and stores it in an array called 'majority_arr'. Finally, it prints the most common classification for each column and returns the 'majority_arr'. This function can be useful for quickly identifying the dominant column types in a large dataset. </br>
 
 #### match_column_type: </br>
 This function takes a dataset and a column name as input parameters and returns the best matching column type based on the similarity of the values in the column with predefined type maps. Here are the main steps of the function:
