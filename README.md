@@ -114,7 +114,7 @@ The output is a Pandas DataFrame with two columns:
 * colname: The name of the column.
 * prediction: The predicted entity type for the column.
 </br>
-### How it works
+#### How it works: </br>
 The classify_columns function first separates the columns into two categories: string columns and numeric columns.</br>
 
 #### String columns
