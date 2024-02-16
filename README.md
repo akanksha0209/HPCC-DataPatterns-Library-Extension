@@ -162,5 +162,5 @@ The final output after applying all the classification functions and regex is as
 
 ### Links for Some Datasets
 
-1) [https://drive.google.com/file/d/1RHoS14zMEKozfDhV6Brtmhiec-qepSWK/view?usp=share_link](https://drive.google.com/file/d/1RHoS14zMEKozfDhV6Brtmhiec-qepSWK/view?usp=share_link) </br>
+1) [Datasets can be downloaded from here](https://drive.google.com/drive/folders/1By6gng2LclRlkn8TB8JWmk3Tgb0WQjLO?usp=sharing) </br>
 
